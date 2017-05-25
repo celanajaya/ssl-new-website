@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>ShapeShifter Lab Sign In</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="libs/backendless.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+        <!-- Add your site or application content here -->
+        <div id="sidebar">
+            <div id="SSLLogo"></div>
+            <div id="userName"></div>
+            <div id="newButton">New Event</div>
+            <div id="currentButton">Current Event</div>
+            <div id="pastButton">Past Events</div>
+            <div id="logoutButton">Logout</div>
+        </div>
+        <section id="main">
+        <p style="font-size:24px;">Welcome to Shapeshifter Bookings</p>
+        <div class="info fadeInUp">
+            <div class="title">Booking Submission:</div>
+              <table class="eventTable fadeInUp">
+                <tr class="infoRow">
+                  <td class="label"><label>Event Type: </label></td>
+                  <td><select class="input" id="eventType">
+                      <option value="musicperformance">Music Performance</option>
+                      <option value="danceperformance">Dance Performance</option>
+                      <option value="theatreperformance">Theatre Performance</option>
+                      <option value="privateperformance">Private Party</option>
+                      <option value="childrensevent">Children's Event</option>
+                      <option value="corporateevent">Corporate Event</option>
+                      <option value="theatreperformance">Community Event</option>
+                      <option value="theatreperformance">Workshop</option>
+                      <option value="theatreperformance">Rehearsal</option>
+                      <option value="theatreperformance">Film Screening</option>
+                      <option value="theatreperformance">Video Shoot</option>
+                      <option value="theatreperformance">Photo Shoot</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr class="infoRow"><td class="label"><label>Event Name:</label></td><td ><input class="input" id="eventname" type="text" name="eventname"></td></tr>
+                <tr class="infoRow"><td class="label"><label>Email Contact: </label></td><td><input class="input" id="emailcontact" type="text" name="emailcontact"></td></tr>
+                <tr class="infoRow"><td class="label"><label>Cell Contact: </label></td><td><input class="input" id="cellcontact" type="text" name="cellcontact"></td></tr>
+                <tr class="infoRow"><td class="label"><label>Event Description: </label></td><td><input class="input" id="eventdetails" type="text" name="eventdetails"></td></tr>
+                <tr class="infoRow"><td class="label"><label>Expected Attendance: </label></td><td><input class="input" id="attendance" type="text" name="attendance"></td></tr>
+                <tr class="infoRow"><td class="label"><label>Ticket Price: </label></td><td><input class="input" id="ticketprice" type="text" name="ticketprice"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Website: </label></td><td><input class="input" id="projectwebsite" type="text" name="projectwebsite"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Facebook Page: </label></td><td><input class="input" id="facebook" type="text" name="facebook"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Twitter Page: </label></td><td><input class="input" id="twitter" type="text" name="twitter"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Work Sample 1: </label></td><td><input class="input" id="sample1" type="text" name="sample1"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Work Sample 2: </label></td><td><input class="input" id="sample2" type="text" name="sample2"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Work Sample 3: </label></td><td><input class="input" id="sample3" type="text" name="sample3"></td></tr>
+                <tr class="infoRow"><td class="label"><label >Valid Work Permit? </label></td><td><input class="input" id="permit" type="checkbox" name="sample3"></td></tr>
+              </table>
+              <div id="submit1">Submit</div>
+      </div>
+        </section>
+    </body>
+</html>
